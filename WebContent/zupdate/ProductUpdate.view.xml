@@ -1,0 +1,23 @@
+<core:View xmlns:core="sap.ui.core" xmlns:mvc="sap.ui.core.mvc" xmlns="sap.m"
+		 xmlns:sf="sap.ui.layout.form"
+		controllerName="zupdate.ProductUpdate" xmlns:html="http://www.w3.org/1999/xhtml">
+	<Page title="Title">
+		<content>
+	           <sf:SimpleForm id="idSf">
+	              <Label text="Product ID"/>
+	              <Text text="{ProductID}" id="idProd"/>
+	              
+	              <Label text="Name"/>
+	              <Input value="{Name}" id="idName"/>
+	              
+	          </sf:SimpleForm>
+		</content>
+		<footer>
+		     <Bar>
+		       <contentMiddle>
+		          <Button text="Update" press="updateProduct"/>
+		       </contentMiddle>
+		    </Bar>
+		</footer>
+	</Page>
+</core:View>
